@@ -1,6 +1,11 @@
-
+import BarraNavegacion from "./BarraNavegacion";
 function Home(){
-    return("Hola soy Home xd ");
+    return(
+      <>
+      <BarraNavegacion/>        
+      <p>Hola soy Home xd</p>
+      </>
+    );
 }
 
 export default Home;

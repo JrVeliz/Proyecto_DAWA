@@ -4,7 +4,8 @@ function Dashboard(){
     const navigate = useNavigate();
     const handleClick = (ruta) => {
         navigate(ruta)
-      }
+    }
+    
     return (
         <header>
             <button onClick={()=>handleClick('/login')}>Log in</button>

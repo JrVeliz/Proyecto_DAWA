@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import BarraNavegacion from "./BarraNavegacion";
 
 function Noticias(){
-    return ("Hola soy noticias xd");
+    return (
+      <>
+        <BarraNavegacion/>
+        <p>Hola soy Noticias xd</p>
+      </>
+    );
 }
 
 export default Noticias;
