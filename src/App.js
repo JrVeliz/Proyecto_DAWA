@@ -7,6 +7,7 @@ import Noticias from"./Componentes/Noticias";
 import Entretenimiento from "./Componentes/Entretenimiento";
 import ResenaJuego from "./Componentes/ResenaJuego";
 import TopJuegos from "./Componentes/TopJuegos";
+import Account from "./Componentes/Account";
 
 function App() {
   return (
@@ -16,12 +17,14 @@ function App() {
         <Routes>            
               <Route path="/" element={<Dashboard/>}/>
               <Route path="home" element={<Home/>}/>
+              <Route path="login" element={<Login/>}/>
+              <Route path="register" element={<SignUp/>}/>
+              <Route path="account" element={<Account/>}/>
               <Route path="noticias" element={<Noticias/>}/>
               <Route path="topsjuegos" element={<TopJuegos/>}/>
               <Route path="entretenimiento" element={<Entretenimiento/>}/>
               <Route path="resenajuego" element={<ResenaJuego/>}/>
-              <Route path="login" element={<Login/>}/>
-              <Route path="register" element={<SignUp/>}/>
+              
         </Routes>
       </BrowserRouter>
     </div>

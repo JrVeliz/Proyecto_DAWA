@@ -26,8 +26,7 @@ function Login(){
 
     return(
         //Formulario
-        <body>
-          <div>
+        <div>
             <h2>Iniciar Sesión</h2>
             <div>
               <label>Usuario</label>
@@ -52,8 +51,7 @@ function Login(){
             <button onClick={handleLogin}>
                 Entrar
               </button>
-        </div>        
-      </body>
+        </div>  
     );
 }
 
