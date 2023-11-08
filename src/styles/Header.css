@@ -1,0 +1,42 @@
+    .barra-navegacion {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .lista-enlaces {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .lista-enlaces li {
+    margin: 0;
+  }
+  
+  .lista-enlaces li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .boton-cerrar-sesion {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .boton-cerrar-sesion:hover {
+    background-color: darkred;
+  }
+  

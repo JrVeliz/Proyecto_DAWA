@@ -1,4 +1,16 @@
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "../styles/Header.css";
+
+export default function Header() {
+  return (
+    <>
+      <header>
+        <BarraNavegacion />
+      </header>
+    </>
+  );
+}
 
 function BarraNavegacion() {
   const navigate = useNavigate();
@@ -10,9 +22,9 @@ function BarraNavegacion() {
   };
 
   return (
-    <nav>
-      <p>Logo</p>
-      <ul>
+    <nav className="barra-navegacion">
+      <p className="logo">Logo</p>
+      <ul className="lista-enlaces">
         <li>
           <Link to="/home">Home</Link>
         </li>
@@ -26,9 +38,9 @@ function BarraNavegacion() {
           <Link to="/entretenimiento">Entretenimiento</Link>
         </li>
       </ul>
-      <button onClick={LogOut}>Cerrar Sesion</button>
+      <button className="boton-cerrar-sesion" onClick={LogOut}>
+        Cerrar Sesión
+      </button>
     </nav>
   );
 }
-
-export default BarraNavegacion;

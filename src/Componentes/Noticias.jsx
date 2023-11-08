@@ -1,12 +1,12 @@
-import BarraNavegacion from "./BarraNavegacion";
+import Header from "./Header";
 
-function Noticias(){
-    return (
-      <>
-        <BarraNavegacion/>
-        <p>Hola soy Noticias xd</p>
-      </>
-    );
+function Noticias() {
+  return (
+    <>
+      <Header />
+      <p>Hola soy Noticias xd</p>
+    </>
+  );
 }
 
 export default Noticias;
