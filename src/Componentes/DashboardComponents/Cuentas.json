@@ -1,10 +1,12 @@
 [
   {
-    "usuario": "admin",
-    "contrasena": "123"
-  },
-  {
-    "usuario": "admin2",
-    "contrasena": "456"
+    "id": 1,
+    "name": "Jose",
+    "last_name": "Ronquillo",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "123",
+    "country": "Ecuador",
+    "gender": "hombre"  
   }
 ]

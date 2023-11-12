@@ -1,13 +1,13 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Componentes/HomeComponents/Home";
 import Dashboard from "./Componentes/DashboardComponents/Dashboard";
-import Login from "./Componentes/DashboardComponents/Login";
-import SignUp from "./Componentes/DashboardComponents/Signup";
 import Noticias from "./Componentes/Noticias";
 import Entretenimiento from "./Componentes/Entretenimiento";
 import ResenaJuego from "./Componentes/ResenaJuego";
 import TopJuegos from "./Componentes/TopJuegos";
 import Account from "./Componentes/Account";
+import Login from "./Componentes/DashboardComponents/Login.js";
+import SignUp from "./Componentes/DashboardComponents/Signup.js";
 
 function App() {
   return (

@@ -14,7 +14,7 @@ export default function Home() {
     imageUrl: imgBanner2,
   });
 
-/*
+  /*
   const actualizarBanner = () => {
       setinfoBanner({
         title: '"Las patas de Kurumi a la venta"',
