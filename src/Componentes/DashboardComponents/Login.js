@@ -10,7 +10,7 @@ const initialValues = {
   password: "",
 };
 
-export default function Login() {
+export default function Login({setUser}) {
   //hook para navegar a otras pag
   const navigate = useNavigate();
 
@@ -19,7 +19,9 @@ export default function Login() {
 
   //funcion validacion credenciales
   const handleLogin = ({ username, password }) => {
+    setUser(username);
     if (ifDataUsed(username, "username") && ifDataUsed(password, "password")) {
+      
       console.log("Exito XD");
       navigate("/home");
     } else {

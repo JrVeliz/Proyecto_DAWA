@@ -8,16 +8,27 @@ import TopJuegos from "./Componentes/TopJuegos";
 import Account from "./Componentes/Account";
 import Login from "./Componentes/DashboardComponents/Login.js";
 import SignUp from "./Componentes/DashboardComponents/Signup.js";
+import { useState } from "react";
 
 function App() {
+  const [userLogged, setuserLogged]=useState(null);
+  
+  const handleUserLogin=(dataUser)=>{
+    setuserLogged(dataUser);
+    console.log('Desde App funcion set logged, user actual',userLogged);
+  };
+  const handleUserLogout=()=>{
+    setuserLogged(null);
+    console.log('Desde App funcion set logout, user actual',userLogged);
+  }
   return (
     //Enrutamiento de paginas
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="home" element={<Home />} />
-          <Route path="login" element={<Login />} />
+          <Route path="/" element={<Dashboard user={userLogged}/>} />
+          <Route path="home" element={<Home currentUser={userLogged} logout={handleUserLogout}/>} />
+          <Route path="login" element={<Login  setUser={handleUserLogin}/>} />
           <Route path="signup" element={<SignUp />} />
           <Route path="account" element={<Account />} />
           <Route path="noticias" element={<Noticias />} />

@@ -2,21 +2,22 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 
-export default function Header() {
+export default function Header({userLogged, buttonLogout}) {
   return (
     <>
       <header>
-        <BarraNavegacion />
+        <BarraNavegacion userInfo={userLogged} buttoActionLogout={buttonLogout}/>
       </header>
     </>
   );
 }
 
-function BarraNavegacion() {
+function BarraNavegacion({userInfo, buttoActionLogout}) {
   const navigate = useNavigate();
   const LogOut = () => {
     const resultado = window.confirm("¿Estás seguro de cerrar sesión?");
     if (resultado) {
+      buttoActionLogout();
       navigate("/");
     }
   };
@@ -38,6 +39,7 @@ function BarraNavegacion() {
           <Link to="/entretenimiento">Entretenimiento</Link>
         </li>
       </ul>
+      <p>{userInfo}</p>
       <button className="boton-cerrar-sesion" onClick={LogOut}>
         Cerrar Sesión
       </button>
