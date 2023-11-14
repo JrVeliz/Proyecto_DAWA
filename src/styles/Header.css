@@ -1,42 +1,74 @@
-    .barra-navegacion {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .lista-enlaces {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .lista-enlaces li {
-    margin: 0;
-  }
-  
-  .lista-enlaces li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .boton-cerrar-sesion {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .boton-cerrar-sesion:hover {
-    background-color: darkred;
-  }
-  
+.header-container {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.barra-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.containerMenus ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.containerMenus li {
+  margin: 0 15px;
+  list-style: none;
+}
+.containerMenus li.active a {
+  color: #000000;
+  background-color: #00ffff;
+}
+
+.containerMenus a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.containerMenus a:hover {
+  color: #000000;
+  background-color: #44f814;
+}
+
+.accountButton,
+.logoutButton {
+  font-weight: 500;
+  background-color: #44f814;
+  border-color: #44f814;
+  color: #000000;
+  padding: 7px 8px;
+  margin: 0 10px 0px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.accountButton:hover,
+.logoutButton:hover {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #000000;
+  border-width: 1px;
+  border-color: #00ffff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #00ffff;
+}

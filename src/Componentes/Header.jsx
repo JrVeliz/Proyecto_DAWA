@@ -1,48 +1,71 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 
-export default function Header({userLogged, buttonLogout}) {
+export default function Header({ userLogged, buttonLogout }) {
   return (
-    <>
+    <div className="header-container">
       <header>
-        <BarraNavegacion userInfo={userLogged} buttoActionLogout={buttonLogout}/>
+        <BarraNavegacion
+          userInfo={userLogged}
+          buttoActionLogout={buttonLogout}
+        />
       </header>
-    </>
+    </div>
   );
 }
 
-function BarraNavegacion({userInfo, buttoActionLogout}) {
+function BarraNavegacion({ userInfo, buttoActionLogout }) {
+  const location = useLocation();
   const navigate = useNavigate();
+  const handleClick = (ruta) => {
+    navigate(ruta);
+  };
   const LogOut = () => {
     const resultado = window.confirm("¿Estás seguro de cerrar sesión?");
     if (resultado) {
       buttoActionLogout();
-      navigate("/");
+      handleClick("/");
     }
   };
 
   return (
     <nav className="barra-navegacion">
-      <p className="logo">Logo</p>
-      <ul className="lista-enlaces">
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/noticias">Noticias</Link>
-        </li>
-        <li>
-          <Link to="/topsjuegos">Tops Juegos</Link>
-        </li>
-        <li>
-          <Link to="/entretenimiento">Entretenimiento</Link>
-        </li>
-      </ul>
-      <p>{userInfo}</p>
-      <button className="boton-cerrar-sesion" onClick={LogOut}>
-        Cerrar Sesión
-      </button>
+      <div className="containerImg">
+        <Link  className="logoLink" to="/home">
+          <p className="logo">Logo</p>
+        </Link>
+      </div>
+
+      <div className="containerMenus">
+        <ul>
+          <li className={location.pathname === "/home" ? "active" : ""}>
+            <Link to="/home">Home</Link>
+          </li>
+          <li className={location.pathname === "/noticias" ? "active" : ""}>
+            <Link to="/noticias">Noticias</Link>
+          </li>
+          <li className={location.pathname === "/topsjuegos" ? "active" : ""}>
+            <Link to="/topsjuegos">Tops Juegos</Link>
+          </li>
+          <li
+            className={location.pathname === "/entretenimiento" ? "active" : ""}
+          >
+            <Link to="/entretenimiento">Entretenimiento</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="perfilSection">
+        <button
+          className="accountButton"
+          onClick={() => handleClick("/account")}
+        >
+          {userInfo}
+        </button>
+        <button className="logoutButton" onClick={LogOut}>
+          Cerrar Sesión
+        </button>
+      </div>
     </nav>
   );
 }

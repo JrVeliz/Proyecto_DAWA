@@ -1,9 +1,9 @@
 import Header from "./Header";
 
-function Noticias() {
+function Noticias({currentUser, logout}) {
   return (
     <>
-      <Header />
+      <Header userLogged= {currentUser} buttonLogout={logout}/>
       <p>Hola soy Noticias xd</p>
     </>
   );

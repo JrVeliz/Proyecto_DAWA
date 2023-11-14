@@ -26,14 +26,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard user={userLogged}/>} />
+          <Route path="/" element={<Dashboard/>} />
           <Route path="home" element={<Home currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="login" element={<Login  setUser={handleUserLogin}/>} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="account" element={<Account />} />
-          <Route path="noticias" element={<Noticias />} />
-          <Route path="topsjuegos" element={<TopJuegos />} />
-          <Route path="entretenimiento" element={<Entretenimiento />} />
+          <Route path="account" element={<Account currentUser={userLogged} logout={handleUserLogout}/>} />
+          <Route path="noticias" element={<Noticias currentUser={userLogged} logout={handleUserLogout}/>} />
+          <Route path="topsjuegos" element={<TopJuegos currentUser={userLogged} logout={handleUserLogout}/>} />
+          <Route path="entretenimiento" element={<Entretenimiento currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="resenajuego" element={<ResenaJuego />} />
         </Routes>
       </BrowserRouter>

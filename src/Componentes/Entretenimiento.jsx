@@ -1,8 +1,8 @@
 import Header from "./Header";
-function Entretenimiento() {
+function Entretenimiento({currentUser, logout}) {
   return (
     <>
-      <Header />
+      <Header userLogged= {currentUser} buttonLogout={logout}/>
       <p>Hola soy Entretenimiento xd</p>
     </>
   );
