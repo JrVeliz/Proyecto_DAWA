@@ -1,0 +1,46 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "imageUrl": "https://www.teahub.io/photos/full/211-2110244_kurumi-tokisaki-wallpaper-pc.jpg",
+      "message": "Según muchos internautas existe una página milagrosa en donde puedes comprar un diseño impreso en 3d moldeano con las patas de kurumi y en buena calidad...",
+      "title": "Las patas de Kurumi a la venta"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://www.teahub.io/photos/full/211-2110244_kurumi-tokisaki-wallpaper-pc.jpg",
+      "message": "text 2 xdxddxdxdxxddxdxdxdxxddxdxdxdxxd",
+      "title": "Las patas de Kurumi a la venta 2"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "imageUrl": "https://i.pinimg.com/736x/ab/37/26/ab3726e8c3b97fd86793a1db66701788.jpg",
+      "gameName": "Nombre juego 1",
+      "shortDescription": "Descripción 1",
+      "calification": 10,
+      "autor": "Autor 1"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://i.pinimg.com/736x/ab/37/26/ab3726e8c3b97fd86793a1db66701788.jpg",
+      "gameName": "Nombre juego 2",
+      "shortDescription": "Descripción 2",
+      "calification": 9,
+      "autor": "Autor 2"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "imgUrl": "https://wallpapers-clan.com/wp-content/uploads/2022/09/gojo-pfp-18.jpg",
+      "titulo": "Noticia 1"
+    },
+    {
+      "id": 2,
+      "imgUrl":"https://i.pinimg.com/originals/da/19/ec/da19ec1ad283dd55b63cf2e44c1b8659.jpg",
+      "titulo": "Noticia 2"
+    }
+  ]
+}

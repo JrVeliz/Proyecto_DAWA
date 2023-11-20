@@ -1,23 +1,21 @@
-function LatestReviews({
-  urlImagen,
-  gameName,
-  shortDescription,
-  calification,
-  autor,
-}) {
+import Data from "./DataHome.json";
+
+function LatestReviews() {
+  
   return (
-    <>
-      <h2>Ultimas Reseñas</h2>
-      <div>
-        <img src={urlImagen} alt={`Imagen del juego ${gameName}`} />
-        <div>
-          <h3>{gameName}</h3>
-          <p>Autor:{autor}</p>
-          <p>Calificación:{calification}</p>
-          <p>{shortDescription}</p>
-        </div>
-      </div>
-    </>
+
+    <section>
+    <h2>Ultimas Reseñas</h2>
+    <ul>
+      {Data.reviews.map((review) => (
+        <li key={review.id}>
+          <img src={review.imageUrl} alt="imagen reseña"/>
+          <h3>{review.gameName}</h3>
+          <p>{review.shortDescription}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
   );
 }
 export default LatestReviews;

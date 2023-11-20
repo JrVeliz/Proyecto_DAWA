@@ -1,15 +1,14 @@
-import noticas from "./Noticias.json";
-
+import Data from "./DataHome.json";
 function NewsUpdates() {
   return (
     <>
       <section>
         <h2>Ultimas noticias</h2>
         <ul>
-          {noticas.map((noticia) => (
+          {Data.news.map((noticia) => (
             <li key={noticia.id}>
+              <img src={noticia.imgUrl} alt="imagen noticia"/>
               <h3>{noticia.titulo}</h3>
-              <p>{noticia.descripcion}</p>
             </li>
           ))}
         </ul>

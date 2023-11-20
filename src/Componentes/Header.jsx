@@ -32,7 +32,7 @@ function BarraNavegacion({ userInfo, buttoActionLogout }) {
   return (
     <nav className="barra-navegacion">
       <div className="containerImg">
-        <Link  className="logoLink" to="/home">
+        <Link className="logoLink" to="/home">
           <p className="logo">Logo</p>
         </Link>
       </div>
