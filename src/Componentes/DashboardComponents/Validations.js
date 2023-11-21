@@ -14,10 +14,6 @@ export const inputsSignupValidation = Yup.object({
     .min(3, "Nombre muy corto!")
     .max(50, "Nombre muy largo!")
     .required("Por favor ingrese su nombre"),
-  last_name: Yup.string()
-    .min(3, "Apellido muy corto!")
-    .max(50, "Apellido muy largo!")
-    .required("Por favor ingrese su Apellido"),
   username: Yup.string()
     .min(3, "¡Usuario muy corto!")
     .max(50, "¡Usuario muy largo!")
@@ -29,13 +25,6 @@ export const inputsSignupValidation = Yup.object({
     .min(3, "¡Contraseña muy corta!")
     .max(30, "Contraseña muy larga!")
     .required("Por favor ingrese una contraseña"),
-  cPassword: Yup.string()
-    .oneOf([Yup.ref("password")], "Las contraseña no coinciden")
-    .required("Confirme la contraseña"),
-  country: Yup.string()
-    .min(3, "¿¡Enserio existe un pais con menos de 3 letras!?")
-    .max(100, "ok, no me creo que vivas en un pais de mas de 100 carácteres :v")
-    .required("Ingrese su pais de residencia"),
   gender: Yup.string()
     .matches(
       /^(hombre|mujer)$/,

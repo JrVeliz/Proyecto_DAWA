@@ -1,0 +1,111 @@
+/* Estilos para el contenedor principal */
+.main-container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url(https://scontent.fmec3-1.fna.fbcdn.net/v/t39.30808-6/371123822_857083339413754_474152410984730646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zmkImQps6NEAX8ctyS_&_nc_ht=scontent.fmec3-1.fna&oh=00_AfCQGz-KV6OFaYY2Q-FHwQh8n8sPeMFXZnlTRicJg41FpQ&oe=6560D8CB);
+  background-size: cover;
+}
+
+/* Estilos para el botón de volver */
+.backButtonLogin {
+  font-weight: bold;
+  background-color: #00FFFF;
+  color: #000;
+  padding: 7px 40px;
+  cursor: pointer;
+  border-width: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.backButtonLogin:hover {
+  background-color: black;
+  color: #00FFFF;
+  border-width: 1px;
+  border-color: #00FFFF;
+}
+
+/* Estilos para el contenedor del formulario */
+.container-login {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  width: 35%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Estilos para el título */
+.container-login h1 {
+  color:#fff;
+  text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.container-inputs-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-login,
+#password_login {  
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #BF40BF;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+/* Estilos para el botón de entrar */
+.container-inputs-login button {
+  background-color: #00FFFF;
+  color: #000;
+  padding: 8px 40px;
+  border-width: 0px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.container-inputs-login button:hover{
+  background-color: black;
+  color: #00FFFF;
+  border-width: 1px;
+  border-color: #00FFFF;
+}
+
+/* Estilos para los mensajes de error */
+.container-inputs-login div {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+/* Estilos para el enlace de registro */
+.container-inputs-login p {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-inputs-login a {
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+.container-inputs-login a:hover {
+  text-decoration: underline;
+}
+
+.container-inputs-login label{
+  color: #f8f8f8;
+}

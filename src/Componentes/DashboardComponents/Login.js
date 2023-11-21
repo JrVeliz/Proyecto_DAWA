@@ -4,6 +4,7 @@ import { inputsLoginValidation } from "./Validations";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ifDataUsed } from "./Validations";
+import "../../styles/Login.css";
 
 const initialValues = {
   username: "",
@@ -29,8 +30,9 @@ export default function Login({setUser}) {
     }
   };
   return (
-    <div>
-      <button onClick={() => navigate("/")}>Volver</button>
+    <section  className="main-container-login">
+      <button onClick={() => navigate("/")} className="backButtonLogin">Volver</button>
+      <div className="container-login">
       <h1>LogIn</h1>
       <Formik
         initialValues={initialValues}
@@ -41,15 +43,15 @@ export default function Login({setUser}) {
         }}
       >
         {({ errors, touched }) => (
-          <Form>
-            <label htmlFor="username">Usuario:</label>
-            <Field type="text" name="username" id="username"></Field>
+          <Form className="container-inputs-login">
+            <label htmlFor="username">Username:</label>
+            <Field type="text" name="username" id="username" className="input-login" placeholder="Enter your username..."></Field>
             {errors.username && touched.username ? (
               <div>{errors.username}</div>
             ) : null}
 
-            <label>Contraseña:</label>
-            <Field type="password" name="password" id="passoword"></Field>
+            <label>Password:</label>
+            <Field type="password" name="password" id="password_login" placeholder="Enter your password..."></Field>
             {errors.password && touched.password ? (
               <div>{errors.password}</div>
             ) : null}
@@ -62,6 +64,8 @@ export default function Login({setUser}) {
           </Form>
         )}
       </Formik>
-    </div>
+      </div>
+      
+    </section>
   );
 }
