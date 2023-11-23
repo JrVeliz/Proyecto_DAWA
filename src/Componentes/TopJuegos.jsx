@@ -2,7 +2,7 @@ import Header from "./Header";
 function TopJuegos({currentUser, logout}) {
   return (
     <>
-      <Header userLogged= {currentUser} buttonLogout={logout}/>
+      <Header userLogged= {currentUser.username} buttonLogout={logout}/>
       <p>Hola soy Top de juegos xd</p>
     </>
   );

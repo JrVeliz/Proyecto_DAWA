@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Footer.css";
+
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="footer-content">
           <div className="footer-section about">
-            <h2>Sobre Nosotros - Grupo # ?</h2>
+            <h2>Sobre Nosotros</h2>
+            <h3>Grupo # 3</h3>
             <p>
               Bienvenido a nuestra plataforma de reseñas de videojuegos. Aquí
               encontrarás las últimas reseñas, noticias y actualizaciones del
-              mundo de los videojuegos. Esta página web fue hecha con javascript
-              y Maicena
+              mundo de los videojuegos. <br /> Esta página web fue hecha con
+              javascript y Maicena
             </p>
           </div>
 
@@ -19,7 +22,7 @@ export default function Footer() {
             <h2>Enlaces Rápidos</h2>
             <ul>
               <li>
-                <Link to="/home">Inicio</Link>
+                <Link to="/home">Home</Link>
               </li>
               <li>
                 <Link to="/noticias">Noticias</Link>
@@ -41,7 +44,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} Web de reseñas dde videojuegos U-GG.
+          &copy; {new Date().getFullYear()} Web de reseñas de videojuegos U-GG.
           Todos los derechos reservados.
         </p>
       </div>

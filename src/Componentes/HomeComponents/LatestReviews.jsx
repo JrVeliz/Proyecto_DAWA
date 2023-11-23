@@ -7,11 +7,11 @@ function LatestReviews() {
     <section>
     <h2>Ultimas Reseñas</h2>
     <ul>
-      {Data.reviews.map((review) => (
-        <li key={review.id}>
-          <img src={review.imageUrl} alt="imagen reseña"/>
-          <h3>{review.gameName}</h3>
-          <p>{review.shortDescription}</p>
+      {Data.resenias.map((resenia) => (
+        <li key={resenia.id}>
+          <img src={resenia.urlImagen} alt="imagen reseña"/>
+          <h3>{resenia.titulo_resenia}</h3>
+          <p>{resenia.fecha_resenia}</p>
         </li>
       ))}
     </ul>

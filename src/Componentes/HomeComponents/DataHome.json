@@ -1,46 +1,70 @@
 {
-  "banners": [
+  "resenias": [
     {
       "id": 1,
-      "imageUrl": "https://www.teahub.io/photos/full/211-2110244_kurumi-tokisaki-wallpaper-pc.jpg",
-      "message": "Según muchos internautas existe una página milagrosa en donde puedes comprar un diseño impreso en 3d moldeano con las patas de kurumi y en buena calidad...",
-      "title": "Las patas de Kurumi a la venta"
+      "titulo_resenia": "Reseña 1",
+      "resenia": "texto de la reseña 1 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas",
+      "plataforma": "Plataformas 1",
+      "url_compra": "https://www.youtube.com/watch?v=qaLTbmgwUQ8",
+      "urlImagen": "https://c4.wallpaperflare.com/wallpaper/274/684/958/jujutsu-kaisen-fushiguro-toji-muscles-scars-gun-hd-wallpaper-preview.jpg"
     },
     {
       "id": 2,
-      "imageUrl": "https://www.teahub.io/photos/full/211-2110244_kurumi-tokisaki-wallpaper-pc.jpg",
-      "message": "text 2 xdxddxdxdxxddxdxdxdxxddxdxdxdxxd",
-      "title": "Las patas de Kurumi a la venta 2"
+      "titulo_resenia": "Reseña 2",
+      "resenia": "texto de la reseña 2 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 2",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
     }
   ],
-  "reviews": [
+  "noticias": [
     {
       "id": 1,
-      "imageUrl": "https://i.pinimg.com/736x/ab/37/26/ab3726e8c3b97fd86793a1db66701788.jpg",
-      "gameName": "Nombre juego 1",
-      "shortDescription": "Descripción 1",
-      "calification": 10,
-      "autor": "Autor 1"
+      "titulo": "Titulo Noticia 1",
+      "descripcion": "Descripcion Noticia 1",
+      "descripcionCorta": "Descripcion corta Noticia 1",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry ktula",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/180oviv/skibidi_toilet_es_el_mejor_anime/",
+      "urlImagen": "https://i.blogs.es/3c89a9/05martin-scorsese3-videosixteenbyninejumbo1600/1366_2000.jpg"
     },
     {
       "id": 2,
-      "imageUrl": "https://i.pinimg.com/736x/ab/37/26/ab3726e8c3b97fd86793a1db66701788.jpg",
-      "gameName": "Nombre juego 2",
-      "shortDescription": "Descripción 2",
-      "calification": 9,
-      "autor": "Autor 2"
+      "titulo": "Titulo Noticia 2",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
     }
   ],
-  "news": [
+  "top_juegos": [
     {
-      "id": 1,
-      "imgUrl": "https://wallpapers-clan.com/wp-content/uploads/2022/09/gojo-pfp-18.jpg",
-      "titulo": "Noticia 1"
+      "id": "1",
+      "titulo": "Juego 1",
+      "descripcion": "Descripcion de juego 1 xdxddxdxxddxdxxdd",
+      "fecha_lanzamiento": "19/12/2000",
+      "genero": "Furros",
+      "plataformas": "Plataformas del juego 1",
+      "valoracion": "10",
+      "urlImagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4JT4gHkBt4m4VNEzZIMcvfX3GQNQGDl9JyQ&usqp=CAU"
     },
     {
-      "id": 2,
-      "imgUrl":"https://i.pinimg.com/originals/da/19/ec/da19ec1ad283dd55b63cf2e44c1b8659.jpg",
-      "titulo": "Noticia 2"
+      "id": "2",
+      "titulo": "Juego 2",
+      "descripcion": "Descripcion de juego 2 xdxddxdxxddxdxxdd",
+      "fecha_lanzamiento": "19/12/2000",
+      "genero": "Realidad Virtual",
+      "plataformas": "Plataformas del juego 2",
+      "valoracion": "10",
+      "urlImagen": "https://pbs.twimg.com/media/FytTboxWAAAxj8P.jpg"
     }
   ]
 }

@@ -6,7 +6,7 @@ import Header from "../Header";
 export default function Home({ currentUser, logout }) {
   return (
     <>
-      <Header userLogged={currentUser} buttonLogout={logout} />
+      <Header userLogged={currentUser.username} buttonLogout={logout} />
       <body>
         <Banner />
         <LatestReviews />

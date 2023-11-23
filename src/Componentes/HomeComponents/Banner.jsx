@@ -3,11 +3,11 @@ import "../../styles/Banner.css";
 import { useState } from "react";
 import Data from "./DataHome.json";
 
-export default function Banner({ imageUrl, message, title }) {
+export default function Banner(){
   const [dataBanner, setDataBanner]=useState({
-    imageUrl:Data.banners[0].imageUrl,
-    message:Data.banners[0].message,
-    title:Data.banners[0].title
+    imageUrl:Data.noticias[0].urlImagen,
+    descripcion:Data.noticias[0].descripcionCorta,
+    titulo:Data.noticias[0].titulo
   });
 
   return (
@@ -16,8 +16,8 @@ export default function Banner({ imageUrl, message, title }) {
         <div className="banner">
           <img src={dataBanner.imageUrl} alt="Banner" className="banner-image" />
           <div className="banner-text">
-            <h3>{dataBanner.title}</h3>
-            <p>{dataBanner.message}</p>
+            <h3>{dataBanner.titulo}</h3>
+            <p>{dataBanner.descripcion}</p>
           </div>
         </div>
       </div>

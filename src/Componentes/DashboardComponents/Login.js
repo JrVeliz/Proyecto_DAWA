@@ -1,9 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
-import { inputsLoginValidation } from "./Validations";
+import { inputsLoginValidation,searchAccount } from "./Validations";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ifDataUsed } from "./Validations";
 import "../../styles/Login.css";
 
 const initialValues = {
@@ -19,10 +18,11 @@ export default function Login({setUser}) {
   const [error, setError] = useState("");
 
   //funcion validacion credenciales
-  const handleLogin = ({ username, password }) => {
-    setUser(username);
-    if (ifDataUsed(username, "username") && ifDataUsed(password, "password")) {
-      
+  const handleLogin = (values) => {
+    const { username, password } = values;
+    const userAccount = searchAccount(username, password);
+    if (userAccount) {
+      setUser(userAccount);
       console.log("Exito XD");
       navigate("/home");
     } else {

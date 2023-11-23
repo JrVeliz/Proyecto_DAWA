@@ -5,9 +5,9 @@ function NewsUpdates() {
       <section>
         <h2>Ultimas noticias</h2>
         <ul>
-          {Data.news.map((noticia) => (
+          {Data.noticias.map((noticia) => (
             <li key={noticia.id}>
-              <img src={noticia.imgUrl} alt="imagen noticia"/>
+              <img src={noticia.urlImagen} alt="imagen noticia"/>
               <h3>{noticia.titulo}</h3>
             </li>
           ))}

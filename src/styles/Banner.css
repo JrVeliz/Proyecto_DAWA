@@ -1,5 +1,5 @@
 body {
-  font-family: 'sans-serif',Montserrat;
+  font-family: "sans-serif", Montserrat;
   margin: 0;
 }
 .banner-container {
@@ -16,7 +16,6 @@ body {
 .banner-container:hover .banner-image {
   transform: scale(1.1);
 }
-
 
 .banner-container:hover .banner-text {
   text-decoration-color: #fff;
@@ -49,8 +48,8 @@ body {
   transition: text-decoration-color 0.3s ease;
 }
 .banner-text h3 {
-  font-size:30px;
+  font-size: 30px;
 }
 .banner-text p {
-  font-size:20px;
+  font-size: 20px;
 }

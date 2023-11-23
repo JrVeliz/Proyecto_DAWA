@@ -1,0 +1,87 @@
+/* Account.css */
+.Account {
+  font-family: "Arial", sans-serif;
+  background-color: #111;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.account-info {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #222;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-principal-account {
+  text-align: center;
+}
+
+.container-inputs-cuenta {
+  text-align: left;
+}
+
+.container-inputs-cuenta h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.input-edit-perfil {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.container-data-perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-data-perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.container-data-perfil-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-data-perfil-principal p {
+  color: #00ffff;
+}
+.container-data-perfil-secundaria p strong {
+  color: #00ffff;
+}
+
+.container-inputs-edit-account button,
+.container-data-perfil button {
+  padding: 10px 20px;
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-inputs-edit-account button:hover,
+.container-data-perfil button:hover {
+  background-color: #bf40bf;
+}

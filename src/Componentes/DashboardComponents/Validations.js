@@ -27,7 +27,7 @@ export const inputsSignupValidation = Yup.object({
     .required("Por favor ingrese una contraseña"),
   gender: Yup.string()
     .matches(
-      /^(hombre|mujer)$/,
+      /^(H|M)$/,
       "No me vengas con que te identificas como helicoptero apache de la guerra de USA contra panamá :v"
     )
     .optional(),
@@ -38,6 +38,13 @@ export const ifDataUsed = (data, whatData) => {
   return isUsed;
 };
 
+export const searchAccount=(username,password)=>{
+  const userAccount = accountsData.find(
+    account => account.username === username && account.password === password
+  );
+
+  return userAccount;
+}
 export const registerAccount = (values) => {
   try {
     const cuentas = accountsData;
