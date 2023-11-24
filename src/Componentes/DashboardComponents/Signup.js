@@ -14,6 +14,8 @@ const initialValues = {
   cPassword: "",
   country: "",
   gender: "",
+  //Les deje un gif por deafault ya que nose como poner pa que suban sus imagenes xd
+  urlImgPerfil:"https://media.tenor.com/fS2VWhhKhU4AAAAC/rei-ayanami-rei.gif"
 };
 
 export default function Signup() {
@@ -52,7 +54,7 @@ export default function Signup() {
         Volver
       </button>
       <div className="container-signup">
-        <h2>Signup</h2>
+        <h1>Signup</h1>
         <Formik
           initialValues={initialValues}
           validationSchema={inputsSignupValidation}
@@ -64,27 +66,55 @@ export default function Signup() {
           {({ errors, touched }) => (
             <Form className="container-inputs-signup">
               <label htmlFor="name">Nombres:</label>
-              <Field type="text" name="name" id="name"className="input-signup"></Field>
+              <Field
+                type="text"
+                name="name"
+                id="name"
+                className="input-signup"
+              ></Field>
               {errors.name && touched.name ? <div>{errors.name}</div> : null}
 
               <label htmlFor="email">Correo electrónico:</label>
-              <Field type="email" name="email" id="email" className="input-signup"></Field>
+              <Field
+                type="email"
+                name="email"
+                id="email"
+                className="input-signup"
+              ></Field>
               {errors.email && touched.email ? <div>{errors.email}</div> : null}
 
               <label htmlFor="username">Nombre de Usuario:</label>
-              <Field type="text" name="username" id="username" className="input-signup"></Field>
+              <Field
+                type="text"
+                name="username"
+                id="username"
+                className="input-signup"
+              ></Field>
               {errors.username && touched.username ? (
                 <div>{errors.username}</div>
               ) : null}
 
               <label htmlFor="password">Contraseña:</label>
-              <Field type="password" name="password" id="password_signup"></Field>
+              <Field
+                type="password"
+                name="password"
+                id="password_signup"
+              ></Field>
               {errors.password && touched.password ? (
                 <div>{errors.password}</div>
               ) : null}
 
-              <label htmlFor="gender"> Género :</label>
-              <Field type="text" name="gender" id="gender" className="input-signup"></Field>
+              <label htmlFor="gender">Género:</label>
+              <Field
+                as="select"
+                name="gender"
+                id="gender"
+                className="input-signup"
+              >
+                <option value="">Selecciona una opción</option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+              </Field>
               {errors.gender && touched.gender ? (
                 <div>{errors.gender}</div>
               ) : null}

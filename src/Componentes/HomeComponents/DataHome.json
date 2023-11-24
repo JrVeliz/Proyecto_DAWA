@@ -21,6 +21,94 @@
       "plataforma": "Plataformas 2",
       "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
       "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 3,
+      "titulo_resenia": "Reseña 3",
+      "resenia": "texto de la reseña 3 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 3",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 5,
+      "titulo_resenia": "Reseña 5",
+      "resenia": "texto de la reseña 5 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 5",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 6,
+      "titulo_resenia": "Reseña 6",
+      "resenia": "texto de la reseña 6 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 6",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 7,
+      "titulo_resenia": "Reseña 7",
+      "resenia": "texto de la reseña 7 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 7",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id":8,
+      "titulo_resenia": "Reseña 8",
+      "resenia": "texto de la reseña 8 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 2",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 9,
+      "titulo_resenia": "Reseña 9",
+      "resenia": "texto de la reseña 9 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 2",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 10,
+      "titulo_resenia": "Reseña 10",
+      "resenia": "texto de la reseña 10 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 2",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
+    },
+    {
+      "id": 11,
+      "titulo_resenia": "11: Esta no",
+      "resenia": "texto de la reseña 11 xddxddxdxdx",
+      "puntuacion": "10",
+      "fecha_resenia": "11/11/2011",
+      "usuario_resenia": "Benito Kmelas Segundo",
+      "plataforma": "Plataformas 2",
+      "url_compra": "https://www.youtube.com/watch?v=sS9UFRaBDN0",
+      "urlImagen": "https://i.pinimg.com/originals/4b/53/f1/4b53f15bc7eee568e3f627cfd4009b18.jpg"
     }
   ],
   "noticias": [
@@ -37,6 +125,76 @@
     {
       "id": 2,
       "titulo": "Titulo Noticia 2",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Titulo Noticia 3",
+      "descripcion": "Descripcion  Noticia 3",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Titulo Noticia 4",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Titulo Noticia 5",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Titulo Noticia 6",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Titulo Noticia 7",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Titulo Noticia 8",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.donmai.us/sample/98/2f/__briar_league_of_legends_drawn_by_gambler_carrd__sample-982faeba5eed6009abfd2f454f2a4dc1.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Titulo Noticia 8",
       "descripcion": "Descripcion  Noticia 2",
       "descripcionCorta": "Descripcion corta Noticia 2",
       "fecha_publicacion": "19/06/2001",

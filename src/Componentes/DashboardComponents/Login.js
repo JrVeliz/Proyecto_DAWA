@@ -13,10 +13,10 @@ const initialValues = {
 export default function Login({setUser}) {
   //hook para navegar a otras pag
   const navigate = useNavigate();
-
   //hook para controlar el error de credenciales ingresadas
   const [error, setError] = useState("");
 
+  //LOGIN
   //funcion validacion credenciales
   const handleLogin = (values) => {
     const { username, password } = values;
@@ -29,6 +29,7 @@ export default function Login({setUser}) {
       setError("Credenciales Incorrectas");
     }
   };
+  
   return (
     <section  className="main-container-login">
       <button onClick={() => navigate("/")} className="backButtonLogin">Volver</button>

@@ -69,7 +69,7 @@ function Account({ currentUser, logout }) {
                       <Field
                         type="text"
                         name="password"
-                        id="password_signup"
+                        id="password_acccount"
                         className="input-edit-perfil"
                       ></Field>
                       {errors.password && touched.password ? (

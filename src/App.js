@@ -9,7 +9,7 @@ import Account from "./Componentes/Account";
 import Login from "./Componentes/DashboardComponents/Login.js";
 import SignUp from "./Componentes/DashboardComponents/Signup.js";
 import { useState } from "react";
-
+import EjemploComponenteDestino from "./Componentes/HomeComponents/EjemploComponenteDestino.jsx";
 function App() {
   const [userLogged, setuserLogged]=useState(null);
   
@@ -35,6 +35,7 @@ function App() {
           <Route path="topsjuegos" element={<TopJuegos currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="entretenimiento" element={<Entretenimiento currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="resenajuego" element={<ResenaJuego />} />
+          <Route path="ejemploComponenteDestino" element={<EjemploComponenteDestino />} />
         </Routes>
       </BrowserRouter>
     </div>

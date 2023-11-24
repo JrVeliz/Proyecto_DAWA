@@ -30,13 +30,14 @@
 }
 
 .input-edit-perfil {
-  width: 100%;
+  margin: 10px 0;
   padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #333;
+  border-radius: 5px;
+  border: 1px solid #bf40bf;
+  background-color: #000;
   color: #fff;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container-data-perfil {
