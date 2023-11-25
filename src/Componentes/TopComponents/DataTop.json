@@ -1,0 +1,64 @@
+{
+  "Tops": [
+    {
+      "id": 1,
+      "gameName": "The Legend of Zelda: Tears of the Kingdom",
+      "shortDescription": "Es la secuela de The Legend of Zelda: Breath of the Wild, uno de los juegos más aclamados de la historia. En esta nueva aventura, Link y Zelda exploran un mundo lleno de misterios, peligros y secretos. El juego promete una libertad de exploración sin precedentes, un sistema de combate mejorado y una historia épica. ",
+      "imageUrl": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000063714/2ac2500b2aae03a57bfe8cc4b41a1225305f043f9346f1bf0c4b6e78d81efebb",
+      "releasedate": "3 de marzo de 2023.",
+      "tags": "Aventura, acción, rol, mundo abierto, puzle. ",
+      "platforms": "Nintendo Switch.",
+      "Rating":"9.8",
+      "Buy": "https://www.nintendo.es/Nintendo-eShop/Nintendo-eShop-1806894.html",
+      "autor": "Solis Jean Carlos"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg?t=1700821775",
+      "gameName": "Baldur's Gate 3",
+      "shortDescription": "Es la tercera entrega de la saga de rol basada en el universo de Dungeons & Dragons. El juego nos permite crear nuestro propio personaje y reclutar a un grupo de compañeros para vivir una aventura llena de decisiones, combates, magia y exploración. El juego cuenta con un modo cooperativo online y un editor de campañas. ",
+      "releasedate": "10 de octubre de 2023. ",
+      "tags": "Rol, estrategia, táctico, fantasía, multijugador. ",
+      "platforms": "PC y Xbox Series.",
+      "Rating":"9.5",
+      "Buy": "https://store.steampowered.com/?l=spanish",
+      "autor": "Ronquillo Jose"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000063709/32b85837beea0eee31220a59e247219662de4011f7a8c18fce61cf99a4933eb7",
+      "gameName": "Metroid Prime Remastered",
+      "shortDescription": "Es una remasterización de la trilogía de Metroid Prime, los juegos de acción en primera persona protagonizados por Samus Aran. El juego incluye los tres títulos originales con gráficos mejorados, controles adaptados y algunas novedades. ",
+      "releasedate": "29 de septiembre de 2023. ",
+      "tags": "Acción, aventura, ciencia ficción, shooter, puzle. ",
+      "platforms": "Nintendo Switch. ",
+      "Rating":"9.2",
+      "Buy": "https://www.nintendo.es/Nintendo-eShop/Nintendo-eShop-1806894.html",
+      "autor": "Rak Dylan"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg?t=1693590732",
+      "gameName": "The Witcher 3",
+      "shortDescription": "Wild Hunt - Complete Edition*: Es la edición definitiva del aclamado juego de rol basado en las novelas de Andrzej Sapkowski. El juego nos pone en la piel de Geralt de Rivia, un cazador de monstruos que se ve envuelto en una guerra y una profecía. El juego incluye todas las expansiones y contenidos adicionales, así como mejoras gráficas y de rendimiento. ",
+      "releasedate": "15 de agosto de 2023. ",
+      "tags": "Rol, acción, mundo abierto, fantasía, aventura.",
+      "platforms": "PC, PS5 y Xbox Series. ",
+      "Rating":"9",
+      "Buy": "https://www.gog.com/",
+      "autor": "Zamora Nelson"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1003590/header.jpg?t=1692838156",
+      "gameName": "Tetris Effect: Connected",
+      "shortDescription": "Es una versión ampliada y mejorada del juego de puzles más famoso de la historia. El juego combina el clásico Tetris con una experiencia audiovisual envolvente y un modo multijugador online. El juego cuenta con más de 30 niveles, varios modos de juego y una banda sonora original.",
+      "releasedate": "18 de julio de 2023. ",
+      "tags": "Puzle, música, arcade, casual, multijugador. ",
+      "platforms": "PC, PS5 y Xbox Series. ",
+      "Rating":"8.9",
+      "Buy": "https://store.epicgames.com/es-ES/",
+      "autor": "Soria Mayerli"
+    }
+  ]
+}

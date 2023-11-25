@@ -1,0 +1,50 @@
+/* Estilos para el encabezado */
+.header {
+  text-align: center;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topsSection {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.topsList {
+  list-style: none;
+  padding: 0;
+}
+
+.gameItem {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gameItem p:last-child {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.gameItem img {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.gameItem a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.gameItem a:hover {
+  text-decoration: underline;
+}
