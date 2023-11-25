@@ -30,7 +30,7 @@ function App() {
           <Route path="home" element={<Home currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="login" element={<Login  setUser={handleUserLogin}/>} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="account" element={<Account currentUser={userLogged} logout={handleUserLogout}/>} />
+          <Route path="account" element={<Account currentUser={userLogged} logout={handleUserLogout} setUser={handleUserLogin}/>} />
           <Route path="noticias" element={<Noticias currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="topsjuegos" element={<TopJuegos currentUser={userLogged} logout={handleUserLogout}/>} />
           <Route path="entretenimiento" element={<Entretenimiento currentUser={userLogged} logout={handleUserLogout}/>} />

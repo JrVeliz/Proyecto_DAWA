@@ -3,8 +3,11 @@ import { Formik, Form, Field } from "formik";
 import Header from "./Header";
 import "../styles/Account.css";
 import { inputsSignupValidation } from "./DashboardComponents/Validations";
-function Account({ currentUser, logout }) {
+import { actualizarUsuario } from "../utils/db_functions";
+
+function Account({ currentUser, logout,setUser }) {
   const initialDataProfile = {
+    id:currentUser.id,
     name: currentUser.name,
     username: currentUser.username,
     email: currentUser.email,
@@ -19,10 +22,21 @@ function Account({ currentUser, logout }) {
   const handleEditProfile = () => {
     setIsEditing(true);
   };
-  const handleSaveProfile = (values) => {
-    // Aquí podrías enviar los datos del usuario actualizados al servidor
-    setUserData(values);
-    setIsEditing(false);
+  const handleSaveProfile = async(values) => {
+    try {
+      const userUpdated = await actualizarUsuario(values);
+      if (userUpdated.success) {
+        console.log("Desde if de userUpdate:",userUpdated);
+        setUser(userUpdated.data);
+        setUserData(values);
+      } else {
+        setError("Credenciales incorrectas");
+        console.log(userUpdated.message);
+      }
+      setIsEditing(false);
+    } catch (error) {
+      console.log("Error de try de nelson xd:"+error);
+    }
   };
 
   return (
@@ -36,7 +50,10 @@ function Account({ currentUser, logout }) {
               <h2>Estas en modo edición</h2>
               <div>
                 <Formik
-                  initialValues={userData}
+                  initialValues={{
+                    ...userData,
+                    urlmgPerfil: "https://media.tenor.com/o_2VGtQWIo8AAAAC/kurumi-love.gif",
+                  }}
                   validationSchema={inputsSignupValidation}
                   onSubmit={(values) => {
                     handleSaveProfile(values);
@@ -101,22 +118,22 @@ function Account({ currentUser, logout }) {
             <div className="container-data-perfil">
               <div className="container-data-perfil-principal">
                 <img
-                  src={userData.urlImgPerfil}
+                  src={initialDataProfile.urlImgPerfil}
                   alt="icon perfil"
                 />
                 <p>
-                  <strong>{userData.username}</strong>
+                  <strong>{initialDataProfile.username}</strong>
                 </p>
               </div>
               <div className="container-data-perfil-secundaria">
                 <p>
-                  <strong>Nombre de usuario:</strong> {userData.name}
+                  <strong>Nombre de usuario:</strong> {initialDataProfile.name}
                 </p>
                 <p>
-                  <strong>Correo electrónico:</strong> {userData.email}
+                  <strong>Correo electrónico:</strong> {initialDataProfile.email}
                 </p>
                 <p>
-                  <strong>Sexo:</strong> {userData.gender}
+                  <strong>Sexo:</strong> {initialDataProfile.gender}
                 </p>
               </div>
               <button onClick={handleEditProfile}>Editar perfil</button>

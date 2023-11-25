@@ -4,6 +4,7 @@ import { inputsLoginValidation,searchAccount } from "./Validations";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Login.css";
+import { buscarUsuario } from "../../utils/db_functions";
 
 const initialValues = {
   username: "",
@@ -18,15 +19,17 @@ export default function Login({setUser}) {
 
   //LOGIN
   //funcion validacion credenciales
-  const handleLogin = (values) => {
-    const { username, password } = values;
-    const userAccount = searchAccount(username, password);
-    if (userAccount) {
-      setUser(userAccount);
-      console.log("Exito XD");
+  const handleLogin = async(values) => { 
+    // const userAccount = searchAccount(username, password);
+    const userAccount = await buscarUsuario(values);
+    if (userAccount.success) {
+      setUser(userAccount.data[0]);
+      console.log("userAccount: ",userAccount);
+      console.log("userAccount.data[0]:",userAccount.data[0]);
       navigate("/home");
     } else {
-      setError("Credenciales Incorrectas");
+      setError("Credenciales incorrectas");
+      console.log(userAccount.message);
     }
   };
   

@@ -4,7 +4,7 @@ import { Formik, Form, Field } from "formik";
 import { useState } from "react";
 import { ifDataUsed, registerAccount } from "./Validations";
 import "../../styles/Signup.css";
-
+import { crearUsuario } from "../../utils/db_functions";
 const initialValues = {
   name: "",
   last_name: "",
@@ -21,31 +21,41 @@ const initialValues = {
 export default function Signup() {
   //hook para navegar a otras pag
   const navigate = useNavigate();
+  //Error
+  const [error, setError] = useState("");
   //hook controla los errores
   const [errorEmail, setErrorEmail] = useState("");
   //hook controla los errores
   const [errorUsername, setErrorUsername] = useState("");
 
-  const handleSignup = (values) => {
-    console.log(values);
-    const { email, username } = values;
-    const emailExist = ifDataUsed(email, "email");
-    const userNameExist = ifDataUsed(username, "username");
-    if (!emailExist && !userNameExist) {
-      registerAccount(values);
+  const handleSignup = async(values) => {
+    const afterRegister = await crearUsuario(values);
+    if (afterRegister.success) {
       navigate("/login");
     } else {
-      setErrorEmail(
-        emailExist
-          ? "Este correo ya se encuentra registrado con otra cuenta"
-          : null
-      );
-      setErrorUsername(
-        userNameExist
-          ? "Este nombre de usuario ya se encuentra registrado con otra cuenta"
-          : null
-      );
+      setError("Credenciales incorrectas");
+      console.log(afterRegister.message);
     }
+    
+    // console.log(values);
+    // const { email, username } = values;
+    // const emailExist = ifDataUsed(email, "email");
+    // const userNameExist = ifDataUsed(username, "username");
+    // if (!emailExist && !userNameExist) {
+    //   registerAccount(values);
+    //   navigate("/login");
+    // } else {
+    //   setErrorEmail(
+    //     emailExist
+    //       ? "Este correo ya se encuentra registrado con otra cuenta"
+    //       : null
+    //   );
+    //   setErrorUsername(
+    //     userNameExist
+    //       ? "Este nombre de usuario ya se encuentra registrado con otra cuenta"
+    //       : null
+    //   );
+    // }
   };
 
   return (
@@ -125,6 +135,7 @@ export default function Signup() {
               </p>
               {errorEmail && <div>{errorEmail}</div>}
               {errorUsername && <div>{errorUsername}</div>}
+              {error && <div>{error}</div>}
             </Form>
           )}
         </Formik>
