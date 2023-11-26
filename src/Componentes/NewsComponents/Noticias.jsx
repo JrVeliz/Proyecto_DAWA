@@ -7,7 +7,6 @@ function Noticias({currentUser, logout}) {
     <>
       <Header userLogged= {currentUser.username} buttonLogout={logout}/>
       <body>
-      <p>Hola soy Noticias xd</p>
         <News />
       </body>
       <Footer />

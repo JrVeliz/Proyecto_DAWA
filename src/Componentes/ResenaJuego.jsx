@@ -1,8 +1,8 @@
 import Header from "./Header";
-function ResenaJuego() {
+function ResenaJuego({currentUser,logout}) {
   return (
     <>
-      <Header />
+      <Header userLogged={currentUser.username} buttonLogout={logout}  />
       <p>Hola soy Reseña de un juego xd</p>
     </>
   );

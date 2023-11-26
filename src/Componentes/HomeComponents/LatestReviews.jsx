@@ -24,7 +24,7 @@ export default function LatestReviews() {
 
   function handleReviews(idReview) {
     const reviewSelected = reviews[idReview - 1];
-    navigate("/ejemploComponenteDestino", { state: reviewSelected });
+    navigate("/ReviewComplete", { state: reviewSelected });
     console.log("Desde LastReview: ", idReview);
   }
 

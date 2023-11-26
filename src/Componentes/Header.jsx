@@ -49,9 +49,9 @@ function BarraNavegacion({ userInfo, buttoActionLogout }) {
             <Link to="/topsjuegos">Tops Juegos</Link>
           </li>
           <li
-            className={location.pathname === "/entretenimiento" ? "active" : ""}
+            className={location.pathname === "/reviews" ? "active" : ""}
           >
-            <Link to="/entretenimiento">Entretenimiento</Link>
+            <Link to="/reviews">Reseñas</Link>
           </li>
         </ul>
       </div>

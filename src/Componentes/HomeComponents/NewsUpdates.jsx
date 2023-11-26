@@ -1,4 +1,3 @@
-import Data from "./DataHome.json";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { selectNews } from "../../utils/db_functions";
@@ -29,7 +28,7 @@ export default function NewsUpdates() {
 
   function handleNews(idNew) {
     const newSelected = news[idNew-1];
-    navigate("/ejemploComponenteDestino", { state: newSelected });
+    navigate("/NewComplete", { state: newSelected });
     console.log("Desde NewsUpdates: ", idNew);
   }
   return (

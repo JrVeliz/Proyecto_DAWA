@@ -8,11 +8,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  font-family: "sans-serif", Montserrat;
-  margin: 0;
-}
-
 .banner-container {
   width: 100%;
   position: relative;
