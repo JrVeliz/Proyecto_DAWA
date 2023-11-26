@@ -1,0 +1,94 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Titulo Noticia 1",
+      "descripcion": "Descripcion Noticia 1",
+      "descripcionCorta": "Descripcion corta Noticia 1",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry ktula",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/180oviv/skibidi_toilet_es_el_mejor_anime/",
+      "urlImagen": "https://images8.alphacoders.com/115/1151146.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Titulo Noticia 2",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://images8.alphacoders.com/115/1151146.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Titulo Noticia 3",
+      "descripcion": "Descripcion  Noticia 3",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://images8.alphacoders.com/115/1151146.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Titulo Noticia 4",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://images8.alphacoders.com/115/1151146.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Titulo Noticia 5",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://cdn.vox-cdn.com/thumbor/IiCklmFgvWyNIiQ0ygUzuE8S_nw=/0x0:1755x1125/2000x1333/filters:focal(795x598:796x599)/cdn.vox-cdn.com/uploads/chorus_asset/file/24827380/Main.png"
+    },
+    {
+      "id": 6,
+      "titulo": "Titulo Noticia 6",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://prod.assets.earlygamecdn.com/images/LCS-Finals-TL-vs-C9.webp?mtime=1674036167"
+    },
+    {
+      "id": 7,
+      "titulo": "Titulo Noticia 7",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://www.lavanguardia.com/andro4all/hero/2019/12/oiedmfuF4vQFqt2.jpg?width=1200&aspect_ratio=16:9"
+    },
+    {
+      "id": 8,
+      "titulo": "YouTube da otro duro golpe a los usuarios que usan bloqueadores de anuncios",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://images8.alphacoders.com/115/1151146.png"
+    },
+    {
+      "id": 8,
+      "titulo": "Titulo Noticia ",
+      "descripcion": "Descripcion  Noticia 2",
+      "descripcionCorta": "Descripcion corta Noticia 2",
+      "fecha_publicacion": "19/06/2001",
+      "autor": "Larry Kariata",
+      "urlMasInfo": "https://www.reddit.com/r/copypasta_es/comments/gu8zdl/no/",
+      "urlImagen": "https://i.pinimg.com/736x/68/57/e9/6857e90cff1ff3361cfa8936d3eebecd.jpg"
+    }
+  ]
+}
