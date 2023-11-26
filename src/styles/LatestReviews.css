@@ -28,13 +28,18 @@
 
 .slider-reviews img {
   width: 100%;
-  height: 100%;
+  height: 280px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .reviewU {
   transition: transform 0.3s ease-in-out;
+}
+
+.reviewU img {
+  height: 350px;
+  object-fit: cover;
 }
 
 .reviewU:hover {
@@ -74,10 +79,11 @@
 }
 
 .yellow-rating {
-  background-color:rgba(225, 225, 0, 0.8);
+  background-color: rgba(225, 225, 0, 0.8);
   color: black;
 }
 
 .green-rating {
   background-color: rgba(128, 225, 0, 0.5);
 }
+
