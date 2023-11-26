@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 
@@ -21,14 +21,21 @@ function BarraNavegacion({ userInfo, buttoActionLogout }) {
   const handleClick = (ruta) => {
     navigate(ruta);
   };
+  const [mostrarModal,setMostrarModal]=useState(false);
   const LogOut = () => {
-    const resultado = window.confirm("¿Estás seguro de cerrar sesión?");
-    if (resultado) {
+      setMostrarModal(true);
+  };
+  const handleConfirmation = (confirmed) => {
+    if (confirmed) {
       buttoActionLogout();
       handleClick("/");
+      setMostrarModal(false);
+      console.log("Se confirmó la acción.");
+    } else {
+      console.log("Se canceló la acción.");
+      setMostrarModal(false);
     }
   };
-
   return (
     <nav className="barra-navegacion">
       <div className="containerImg">
@@ -66,6 +73,18 @@ function BarraNavegacion({ userInfo, buttoActionLogout }) {
           Cerrar Sesión
         </button>
       </div>
+      {mostrarModal && (
+        <div className="confirm-window">
+          <div className="confirm-content">
+            <h2>Cerrar Sesión</h2>
+            <p>¿Esta seguro que desea cerrar sesión?</p>
+            <div className="confirm-buttons">
+              <button onClick={() => handleConfirmation(true)} className="yesButton">Sí</button>
+              <button onClick={() => handleConfirmation(false)} className="noButton">No</button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

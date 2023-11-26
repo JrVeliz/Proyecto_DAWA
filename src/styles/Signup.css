@@ -6,8 +6,8 @@
     justify-content: center;
     height: 80%;
     min-height: 100vh;
-    background-image: url(https://scontent.fmec3-1.fna.fbcdn.net/v/t39.30808-6/371123822_857083339413754_474152410984730646_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zmkImQps6NEAX8ctyS_&_nc_ht=scontent.fmec3-1.fna&oh=00_AfCQGz-KV6OFaYY2Q-FHwQh8n8sPeMFXZnlTRicJg41FpQ&oe=6560D8CB);
-    background-size:auto;
+    background-image: url(https://i.pinimg.com/originals/42/83/6a/42836adf0826dbfa27034fc55566d3a2.gif);
+    background-size:contain;
   }
   /* Estilos para el botón de volver*/
 .backButtonSignup {
