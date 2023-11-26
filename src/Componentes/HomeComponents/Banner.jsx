@@ -1,36 +1,56 @@
-import { Link,useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "../../styles/Banner.css";
-import { useState } from "react";
-import Data from "./DataHome.json";
-
+import { selectNews } from "../../utils/db_functions";
 export default function Banner() {
-
-  //SETEA EL BANNER CON LA ULTIMA NOTICIA ACTUALMENTE
-  const noticias = Data.noticias;
-  const ultimaNoticia = noticias.length - 1;
-  const ultimoItem = noticias[ultimaNoticia];
-  const [dataBanner, setDataBanner] = useState({
-    imageUrl: ultimoItem.urlImagen,
-    descripcion: ultimoItem.descripcionCorta,
-    titulo: ultimoItem.titulo,
-  });
   const navigate=useNavigate();
-  function handleBanner(){
-    navigate('/ejemploComponenteDestino', {state:ultimoItem})
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const obtenerNews = async () => {
+    try {
+      const allNews = await selectNews();
+      setNews(allNews.data);
+      setLoading(false);
+    } catch (error) {
+      setError("Hubo un problema al cargar las noticias");
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    obtenerNews();
+  }, []);
+
+  if (loading) {
+    return <p>Cargando noticias...</p>;
   }
+  if (error) {
+    return <p>{error}</p>;
+  }
+  if (news.length === 0) {
+    return <p>No hay noticias disponibles</p>;
+  }
+  const latestNews = news[news.length - 1];
+  
+  function viewNew() {
+    navigate("/ejemploComponenteDestino", { state: latestNews });
+    console.log("Desde LastReview: ", latestNews);
+  }
+
   return (
-    
-    <section onClick={()=>{handleBanner()}}>
+    <section onClick={()=>{viewNew()}}>
       <div className="banner-container">
         <div className="banner">
           <img
-            src={dataBanner.imageUrl}
+            src={latestNews.urlImagen}
             alt="Banner"
             className="banner-image"
           />
           <div className="banner-text">
-            <h3>{dataBanner.titulo}</h3>
-            <p>{dataBanner.descripcion}</p>
+            <h3>{latestNews.titulo}</h3>
+            <p>{latestNews.descripcion}</p>
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
 import Data from "./DataHome.json";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { searchNew } from "./services";
+import { selectNews } from "../../utils/db_functions";
 import "../../styles/NewsUpdates.css";
+
 //Importaciones para carrusel y sus estilos
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,9 +13,22 @@ import "swiper/css/navigation";
 
 export default function NewsUpdates() {
   const navigate = useNavigate();
+  const [news, setNews] = useState([]);
+
+  const obtenerNews = async () => {
+    try {
+      const allNews = await selectNews();
+      setNews(allNews.data);
+    } catch (error) {
+      console.error('Hubo un error al obtener las noticias:', error);
+    }
+  };
+  useEffect(() => {
+    obtenerNews();
+  }, []);
 
   function handleNews(idNew) {
-    const newSelected = searchNew(idNew);
+    const newSelected = news[idNew-1];
     navigate("/ejemploComponenteDestino", { state: newSelected });
     console.log("Desde NewsUpdates: ", idNew);
   }
@@ -37,9 +52,7 @@ export default function NewsUpdates() {
         modules={[Autoplay,Navigation]}
         className="mySwiper"
       >
-        {Data.noticias
-          .slice(Data.noticias.length / 2, Data.noticias.length - 1)
-          .map((noticia) => (
+        {news.map((noticia) => (
             <SwiperSlide className="slider-news" onClick={()=>{handleNews(noticia.id)}}>
               <div key={noticia.id} className="noticiaU">
                 <img src={noticia.urlImagen} alt="imagen noticia" />
