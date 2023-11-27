@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
+import logo from "../Asset/UGGLogo.png"; 
 
 export default function Header({ userLogged, buttonLogout }) {
   return (
@@ -40,7 +41,7 @@ function BarraNavegacion({ userInfo, buttoActionLogout }) {
     <nav className="barra-navegacion">
       <div className="containerImg">
         <Link className="logoLink" to="/home">
-          <p className="logo">Logo</p>
+        <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
 

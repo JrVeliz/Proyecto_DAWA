@@ -2,21 +2,42 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import "../../styles/Ampliado.css"; // Importa el CSS proporcionado
 
 export const NewComplete = ({ currentUser, logout }) => {
   const location = useLocation();
-  const [dataNew, setdataReview] = useState(location.state);
+  const [dataNew] = useState(location.state);
+
+   // Función para formatear la fecha
+   const formatDate = (dateString) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const date = new Date(dateString);
+    return date.toLocaleDateString(undefined, options);
+  };
+
   return (
     <section>
       <Header userLogged={currentUser.username} buttonLogout={logout}></Header>
       <div className="container-resenia">
+        
+        <div className="banner-container-ampliado">
+        <div className="banner-ampliado">
+        <img src={dataNew.urlImagen} alt="Imgen de la noticia" className="banner-image-ampliado"></img>
+        <div className="banner-text-ampliacion">
         <h2>{dataNew.titulo}</h2>
-        <img src={dataNew.urlImagen} alt="Imgen de la noticia"></img>
-        <p>{dataNew.descripcion}</p>
-        <p>{dataNew.fecha_publicacion}</p>
-        <p>{dataNew.autor}</p>
-        <p>{dataNew.urlMasInfo}</p>
+        <div className="metadata-container">
+            <p className="author">{dataNew.autor}</p>
+            <p className="publish-date">{formatDate(dataNew.fecha_publicacion)}</p>
+        </div>
+        </div>
+        
       </div>
+      </div>
+      <p className="default-text">Noticia:</p>
+      <p className="review-section">{dataNew.descripcion}</p>
+      <a href={dataNew.urlMasInfo} className="link-style">{dataNew.urlMasInfo}</a>
+      </div>
+      <br/>
       <div className="container-comments">
         <p>Hola soy la seccion de comentarios</p>
       </div>

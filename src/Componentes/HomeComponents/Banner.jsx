@@ -35,7 +35,7 @@ export default function Banner() {
   const latestNews = news[news.length - 1];
   
   function viewNew() {
-    navigate("/ejemploComponenteDestino", { state: latestNews });
+    navigate("/NewComplete", { state: latestNews });
     console.log("Desde LastReview: ", latestNews);
   }
 

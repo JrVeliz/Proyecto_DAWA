@@ -21,17 +21,18 @@ function News() {
 
   return (
     <section className="news-container">
-      <h1 className="header">Noticias</h1>
+      <h1 className="header-news">¡Mantente al dia con las ultimas Noticias!</h1>
       <div className="news-list">
         {news.map((noticia) => (
           <div key={noticia.id} className="news-item" onClick={() => handleBannerClick(noticia.id)}>
-            <div className="banner-container">
-            <div className="banner">
+            <div className="banner-container-news">
+            <div className="banner-news">
+            <br/>
               <img
                src={noticia.urlImagen} 
                alt="imagen reseña" 
-               className="banner-image" />
-              <div className="banner-text">
+               className="banner-image-news" />
+              <div className="banner-text-news">
                 <h3>{noticia.titulo}</h3>
                 <p>{noticia.descripcionCorta}</p>
               </div>

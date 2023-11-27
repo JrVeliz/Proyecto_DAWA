@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Componentes/HomeComponents/Home";
 import Dashboard from "./Componentes/DashboardComponents/Dashboard";
 import Noticias from "./Componentes/NewsComponents/Noticias.jsx";
-import ResenaJuego from "./Componentes/ResenaJuego";
+import ResenaJuego from "./Componentes/ReviewsComponents/ResenaJuego.jsx";
 import TopJuegos from "./Componentes/TopComponents/TopJuegos.jsx";
 import Account from "./Componentes/Account";
 import Login from "./Componentes/DashboardComponents/Login.js";
