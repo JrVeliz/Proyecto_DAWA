@@ -1,116 +1,115 @@
 .main-container-signup {
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    min-height: 100vh;
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/223e6792880429.5e569ff84ebef.gif);
-    background-size:auto;
-  }
-  /* Estilos para el botón de volver*/
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  min-height: 100vh;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/223e6792880429.5e569ff84ebef.gif);
+  background-size: auto;
+}
+/* Estilos para el botón de volver*/
 .backButtonSignup {
-    font-weight: bold;
-    background-color: #00ffff;
-    color: #000;
-    padding: 7px 40px;
-    cursor: pointer;
-    border-width: 0px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .backButtonSignup:hover {
-    background-color: black;
-    color: #00ffff;
-    border-width: 1px;
-    border-color: #00ffff;
-  }
-  
-  /* Estilos para el contenedor del formulario */
-  .container-signup {
-    margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    width: 30%;
-    height: auto;
-    text-align: center;
-  }
-  
-  /* Estilos para el título */
-  .container-signup h1 {
-    color: #fff;
-    text-align: center;
-  }
-  
-  /* Estilos para los campos de entrada */
-  .container-inputs-signup {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    align-items: center;
-  }
-  .container-inputs-signup div{
-    margin-bottom: 8px;
-  }
-  .input-signup,
-  #password_signup {
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #bf40bf;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Estilos para el botón de entrar */
-  .container-inputs-signup button {
-    background-color: #00ffff;
-    color: #000;
-    padding: 8px 40px;
-    border-width: 0px;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
-  .container-inputs-signup button:hover {
-    background-color: black;
-    color: #00ffff;
-    border-width: 1px;
-    border-color: #00ffff;
-  }
-  
-  /* Estilos para los mensajes de error */
-  .container-inputs-signup div {
-    color: #ff0000;
-    margin-top: 5px;
-  }
-  
-  /* Estilos para el enlace de registro */
-  .container-inputs-signup p {
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .container-inputs-signup a {
-    color: #00ffff;
-    text-decoration: none;
-  }
-  
-  .container-inputs-signup a:hover {
-    text-decoration: underline;
-  }
-  
-  .container-inputs-signup label {
-    color: #f8f8f8;
-  }
-  
+  font-weight: bold;
+  background-color: #00ffff;
+  color: #000;
+  padding: 7px 40px;
+  cursor: pointer;
+  border-width: 0px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.backButtonSignup:hover {
+  background-color: black;
+  color: #00ffff;
+  border-width: 1px;
+  border-color: #00ffff;
+}
+
+/* Estilos para el contenedor del formulario */
+.container-signup {
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+/* Estilos para el título */
+.container-signup h1 {
+  color: #fff;
+  text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.container-inputs-signup {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+.container-inputs-signup div {
+  margin-bottom: 8px;
+}
+.input-signup,
+#password_signup {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #bf40bf;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón de entrar */
+.container-inputs-signup button {
+  background-color: #00ffff;
+  color: #000;
+  padding: 8px 40px;
+  border-width: 0px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.container-inputs-signup button:hover {
+  background-color: black;
+  color: #00ffff;
+  border-width: 1px;
+  border-color: #00ffff;
+}
+
+/* Estilos para los mensajes de error */
+.container-inputs-signup div {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+/* Estilos para el enlace de registro */
+.container-inputs-signup p {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-inputs-signup a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.container-inputs-signup a:hover {
+  text-decoration: underline;
+}
+
+.container-inputs-signup label {
+  color: #f8f8f8;
+}

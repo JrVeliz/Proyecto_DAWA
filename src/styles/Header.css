@@ -1,3 +1,7 @@
+body {
+  font-family: "sans-serif", Montserrat;
+  margin: 0;
+}
 .header-container {
   background-color: #000000;
   padding: 20px;
@@ -73,7 +77,6 @@
   color: #00ffff;
 }
 
-
 /* Modal */
 .confirm-window {
   display: flex;
@@ -105,10 +108,10 @@
   background-color: beige;
   width: 90px;
 }
-.yesButton{
+.yesButton {
   margin-right: 30px;
 }
-.noButton{
+.noButton {
   margin-left: 30px;
 }
 .yesButton:hover {

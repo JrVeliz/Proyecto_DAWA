@@ -1,101 +1,101 @@
-  .banner-container-ampliado {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-  }
-  
-  .banner-container-ampliado:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .banner-container-ampliado:hover .banner-image {
-    transform: scale(1.1);
-  }
-  
-  .banner-container-ampliado:hover .banner-text {
-    text-decoration-color: #fff;
-  }
-  
-  .banner-ampliado {
-    width: 100%;
-    height: 250px; /* Ajusta la altura según lo que desees */
-    position: relative;
-    overflow: hidden;
-    background-color: #f0f0f0 /* Color de fondo del contenedor del banner */
-  }
-  
-  .banner-image-ampliado {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
+.banner-container-ampliado {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
 
+.banner-container-ampliado:hover {
+  background-color: #f0f0f0;
+}
 
-  /*texto del banner*/
-  .banner-text-ampliacion {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: #fff;
-    text-decoration: underline transparent;
-    text-align: left;
-    transition: text-decoration-color 0.3s ease;
-    max-height: 40%; /* Ajusta la altura máxima del texto */
-    overflow: hidden;
-  }
-  .banner-text-ampliacion h2 {
-    font-size: 32px; /* Modifica el tamaño del texto del título */
-  }
-  
-  .banner-text-ampliacion p {
-    font-size: 18px; /* Modifica el tamaño del texto del párrafo */
-  }
+.banner-container-ampliado:hover .banner-image {
+  transform: scale(1.1);
+}
 
-  .banner-container:hover .banner-text {
-    text-decoration-color: #fff;
-  }
+.banner-container-ampliado:hover .banner-text {
+  text-decoration-color: #fff;
+}
 
-  .metadata-container {
-    display: flex;
-    align-items: center; /* Alinea los elementos verticalmente */
-  }
-  
-  .author,
-  .publish-date {
-    margin-right: 10px; /* Agrega un espacio entre el autor y la fecha */
-  }
-  
-  .author {
-    font-weight: bold; /* Hace que el autor sea más destacado */
-    color: #ffffff  }
-  
-  .publish-date {
-    color: #9b9b9b;
-  }
+.banner-ampliado {
+  width: 100%;
+  height: 250px; /* Ajusta la altura según lo que desees */
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Color de fondo del contenedor del banner */
+}
 
-  .review-section {
-    padding: 10px; /* Ajusta el espaciado interno */
-  }
+.banner-image-ampliado {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
-  .default-text {
-    padding: 15px; /* Ajusta el espaciado interno */
-    font-weight: bold;
-    color: #800080;
-    font-size: 20px;
-  }
+/*texto del banner*/
+.banner-text-ampliacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+  text-decoration: underline transparent;
+  text-align: left;
+  transition: text-decoration-color 0.3s ease;
+  max-height: 40%; /* Ajusta la altura máxima del texto */
+  overflow: hidden;
+}
+.banner-text-ampliacion h2 {
+  font-size: 32px; /* Modifica el tamaño del texto del título */
+}
 
-  .text-container {
-    display: flex; /* Utilizamos flexbox */
+.banner-text-ampliacion p {
+  font-size: 18px; /* Modifica el tamaño del texto del párrafo */
+}
+
+.banner-container:hover .banner-text {
+  text-decoration-color: #fff;
+}
+
+.metadata-container {
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.author,
+.publish-date {
+  margin-right: 10px; /* Agrega un espacio entre el autor y la fecha */
+}
+
+.author {
+  font-weight: bold; /* Hace que el autor sea más destacado */
+  color: #ffffff;
+}
+
+.publish-date {
+  color: #9b9b9b;
+}
+
+.review-section {
+  padding: 10px; /* Ajusta el espaciado interno */
+}
+
+.default-text {
+  padding: 15px; /* Ajusta el espaciado interno */
+  font-weight: bold;
+  color: #800080;
+  font-size: 20px;
+}
+
+.text-container {
+  display: flex; /* Utilizamos flexbox */
   align-items: center;
-  }
+}
 
-  .link-style {
-    color: #007bff; /* Color del enlace */
-    text-decoration: underline; /* Subrayado similar a un enlace */
-    /* Otros estilos según sea necesario */
-  }
+.link-style {
+  color: #007bff; /* Color del enlace */
+  text-decoration: underline; /* Subrayado similar a un enlace */
+  /* Otros estilos según sea necesario */
+}

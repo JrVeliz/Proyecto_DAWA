@@ -49,9 +49,9 @@ export const ReviewComplete = ({ currentUser, logout }) => {
       <a href={dataReview.url_compra} className="link-style">{dataReview.url_compra}</a>
       </div>
       </div>
-      <div className="container-comments">
+      {/* <div className="container-comments">
         <p>Hola soy la seccion de comentarios</p>
-      </div>
+      </div> */}
       <Footer></Footer>
     </section>
   );

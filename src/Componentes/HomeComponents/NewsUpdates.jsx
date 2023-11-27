@@ -17,7 +17,13 @@ export default function NewsUpdates() {
   const obtenerNews = async () => {
     try {
       const allNews = await selectNews();
-      setNews(allNews.data);
+       // Ordenar las noticias por fecha de manera descendente
+       const sortedNews = allNews.data.sort(
+        (a, b) => new Date(b.fecha) - new Date(a.fecha)
+      );
+      // Obtener solo las últimas 7 noticias
+      const latestNews = sortedNews.slice(0, 7);
+      setNews(latestNews);
     } catch (error) {
       console.error('Hubo un error al obtener las noticias:', error);
     }

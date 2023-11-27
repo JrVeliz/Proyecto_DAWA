@@ -35,11 +35,14 @@ export const NewComplete = ({ currentUser, logout }) => {
       </div>
       <p className="default-text">Noticia:</p>
       <p className="review-section">{dataNew.descripcion}</p>
+      <div className="text-container">
+      <p className="default-text">LeerMas:</p>
       <a href={dataNew.urlMasInfo} className="link-style">{dataNew.urlMasInfo}</a>
+      </div>
       </div>
       <br/>
       <div className="container-comments">
-        <p>Hola soy la seccion de comentarios</p>
+        {/* <p>Hola soy la seccion de comentarios</p> */}
       </div>
       <Footer></Footer>
     </section>

@@ -39,6 +39,12 @@ export default function Banner() {
     console.log("Desde LastReview: ", latestNews);
   }
 
+    const formatDate = (dateString) => {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      const date = new Date(dateString);
+      return date.toLocaleDateString(undefined, options);
+    };
+
   return (
     <section onClick={()=>{viewNew()}}>
       <div className="banner-container">
@@ -50,7 +56,7 @@ export default function Banner() {
           />
           <div className="banner-text">
             <h3>{latestNews.titulo}</h3>
-            <p>{latestNews.fecha_publicacion}</p>
+            <p>{formatDate(latestNews.fecha_publicacion)}</p>
           </div>
         </div>
       </div>

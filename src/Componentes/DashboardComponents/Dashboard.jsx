@@ -10,7 +10,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="bg-dark text-light vh-100 d-flex flex-column align-items-center justify-content-center" style={{ backgroundImage: 'url("https://i.redd.it/bpxxqqvps4h91.gif")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+    <div className="bg-dark text-light vh-100 d-flex flex-column align-items-center justify-content-center" style={{ backgroundImage: 'url("https://2.bp.blogspot.com/-zvieefMOj2E/WNCKCLFvo0I/AAAAAAAAACE/pxvztGmFgBoA4jPLiPj1VXhGEkc96wrhwCLcB/s1600/Metal-Slug-%2528Animated-GIF%2529.gif")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
 
       <img src={topImage} alt="topImage" style={{ maxWidth: '100%', maxHeight: '200px', marginBottom: '20px' }} />
 

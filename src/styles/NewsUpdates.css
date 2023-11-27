@@ -1,17 +1,17 @@
-.container-lastest-news{
+.container-lastest-news {
   margin-bottom: 10px;
 }
 
 .container-lastest-news h3 {
   font-size: 28px;
-  font-weight:bolder; 
-  color:rgb(0, 0, 0);
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 25px;
-} 
+}
 
- .container-lastest-news span{
+.container-lastest-news span {
   font-size: 17px;
   font-weight: bold;
   color: gray;
@@ -28,7 +28,7 @@
   transition: transform 0.5s ease;
   width: 100%;
   height: 250px;
-  object-fit:cover;
+  object-fit: cover;
 }
 .noticiaU {
   transition: transform 0.3s ease-in-out;

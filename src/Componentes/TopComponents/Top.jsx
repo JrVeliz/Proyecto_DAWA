@@ -1,14 +1,22 @@
 import "../../styles/Top.css";
-import Data from "./DataTop.json";
-
-
+import { selectTopGames } from "../../utils/db_functions";
+import { useState, useEffect } from "react";
 function Tops() {
-  return (
+  const [topGames, setTopGames] = useState([]);
 
+  const obtenerTopGames = async () => {
+    const allTGamesTop = await selectTopGames();
+    setTopGames(allTGamesTop.data);
+  };
+  useEffect(() => {
+    obtenerTopGames();
+  }, []);
+
+  return (
     <section className="topsSection">
     <h1 className="header">Top 10 juegos del 2023</h1>
     <ul className="topsList">
-      {Data.Tops.map((Top) => (
+      {topGames.map((Top) => (
         <li key={Top.id} className="gameItem">
           <h3>{Top.gameName}</h3>
           <img src={Top.imageUrl} alt="imagen reseña"/>
