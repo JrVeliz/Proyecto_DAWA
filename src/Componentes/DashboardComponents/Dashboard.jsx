@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../styles/NeonButton.css";
-import backgroundImage from "../../Asset/wallpaperHV.png";
 import topImage from "../../Asset/UGGLogo.png"; 
 
 function Dashboard() {
@@ -11,7 +10,7 @@ function Dashboard() {
   };
 
   return (
-    <div className="bg-dark text-light vh-100 d-flex flex-column align-items-center justify-content-center" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
+    <div className="bg-dark text-light vh-100 d-flex flex-column align-items-center justify-content-center" style={{ backgroundImage: 'url("https://i.redd.it/bpxxqqvps4h91.gif")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
 
       <img src={topImage} alt="topImage" style={{ maxWidth: '100%', maxHeight: '200px', marginBottom: '20px' }} />
 
