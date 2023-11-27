@@ -1,4 +1,4 @@
-export const buscarUsuario = async (accountToVerified) => {
+export const validateLogin = async (accountToVerified) => {
   try {
     const res = await fetch("http://localhost:3001/login", {
       method: "POST",
@@ -16,7 +16,24 @@ export const buscarUsuario = async (accountToVerified) => {
     console.log("error al buscar el usuario registrado" + error);
   }
 };
-
+export const validateSignup = async (dataToBeFound) => {
+  try {
+    const res = await fetch("http://localhost:3001/signup/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...dataToBeFound,
+      }),
+    });
+    const data = await res.json();
+    const user = data;
+    return user;
+  } catch (error) {
+    console.log("error al buscar el usuario registrado" + error);
+  }
+};
 export const crearUsuario = async (accountToRegister) => {
   try {
     const res = await fetch("http://localhost:3001/signup", {

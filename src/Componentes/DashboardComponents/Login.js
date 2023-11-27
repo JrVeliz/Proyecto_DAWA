@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
-import { inputsLoginValidation,searchAccount } from "./Validations";
+import { inputsLoginValidation } from "./InputsValidations.js";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/Login.css";
-import { buscarUsuario } from "../../utils/db_functions";
+import { validateLogin } from "../../utils/db_functions";
 
 const initialValues = {
   username: "",
@@ -21,7 +21,7 @@ export default function Login({setUser}) {
   //funcion validacion credenciales
   const handleLogin = async(values) => { 
     // const userAccount = searchAccount(username, password);
-    const userAccount = await buscarUsuario(values);
+    const userAccount = await validateLogin(values);
     if (userAccount.success) {
       setUser(userAccount.data[0]);
       console.log("userAccount: ",userAccount);

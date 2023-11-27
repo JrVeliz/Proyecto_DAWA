@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import accountsData from "./Cuentas.json";
+import { buscarUsuario } from "../../utils/db_functions";
 
 export const inputsLoginValidation = Yup.object({
   username: Yup.string()
@@ -32,26 +32,3 @@ export const inputsSignupValidation = Yup.object({
     )
     .optional(),
 });
-
-export const ifDataUsed = (data, whatData) => {
-  const isUsed = accountsData.some((item) => item[whatData] === data);
-  return isUsed;
-};
-
-export const searchAccount=(username,password)=>{
-  const userAccount = accountsData.find(
-    account => account.username === username && account.password === password
-  );
-
-  return userAccount;
-}
-export const registerAccount = (values) => {
-  try {
-    const cuentas = accountsData;
-    cuentas.push(values);
-    console.log("Cuenta Registrada");
-    console.log(cuentas);
-  } catch (error) {
-    throw error;
-  }
-};

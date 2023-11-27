@@ -17,6 +17,14 @@ export default function LatestReviews() {
   const obtenerReviews = async () => {
     const allReviews = await selectReviews();
     setReviews(allReviews.data);
+  // //Ordenar las reseñas por fecha de manera descendente
+  // const sortedReviews = allReviews.data.sort(
+  //   (a, b) => new Date(b.fecha_resenia) - new Date(a.fecha_resenia)
+  // );
+  // // Obtener solo las últimas 7 reseñas
+  // const latestReviews = sortedReviews.slice(0, 7);
+  // setReviews(latestReviews);
+
   };
   useEffect(() => {
     obtenerReviews();

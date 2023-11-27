@@ -1,21 +1,18 @@
-import { inputsSignupValidation } from "./Validations";
+import { inputsSignupValidation } from "./InputsValidations";
+import { validateSignup } from "../../utils/db_functions";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import { useState } from "react";
-import { ifDataUsed, registerAccount } from "./Validations";
 import "../../styles/Signup.css";
 import { crearUsuario } from "../../utils/db_functions";
 const initialValues = {
   name: "",
-  last_name: "",
   username: "",
   email: "",
   password: "",
-  cPassword: "",
-  country: "",
   gender: "",
   //Les deje un gif por deafault ya que nose como poner pa que suban sus imagenes xd
-  urlImgPerfil:"https://media.tenor.com/fS2VWhhKhU4AAAAC/rei-ayanami-rei.gif"
+  urlImgPerfil: "https://media.tenor.com/fS2VWhhKhU4AAAAC/rei-ayanami-rei.gif",
 };
 
 export default function Signup() {
@@ -24,38 +21,22 @@ export default function Signup() {
   //Error
   const [error, setError] = useState("");
   //hook controla los errores
-  const [errorEmail, setErrorEmail] = useState("");
-  //hook controla los errores
-  const [errorUsername, setErrorUsername] = useState("");
+  const [errorCredentials, seterrorCredentials] = useState("");
 
-  const handleSignup = async(values) => {
-    const afterRegister = await crearUsuario(values);
-    if (afterRegister.success) {
-      navigate("/login");
+  const handleSignup = async (values) => {
+    const userAccount = await validateSignup(values);
+    if (userAccount.success) {
+      seterrorCredentials("Los datos de email o usuario ya esta usados");
+      setError("Error al registrar la cuenta");
     } else {
-      setError("Credenciales incorrectas");
-      console.log(afterRegister.message);
+      const afterRegister = await crearUsuario(values);
+      if (afterRegister.success) {
+        navigate("/login");
+      } else {
+        setError("Error al registrar la cuenta");
+        console.log(afterRegister.message);
+      }
     }
-    
-    // console.log(values);
-    // const { email, username } = values;
-    // const emailExist = ifDataUsed(email, "email");
-    // const userNameExist = ifDataUsed(username, "username");
-    // if (!emailExist && !userNameExist) {
-    //   registerAccount(values);
-    //   navigate("/login");
-    // } else {
-    //   setErrorEmail(
-    //     emailExist
-    //       ? "Este correo ya se encuentra registrado con otra cuenta"
-    //       : null
-    //   );
-    //   setErrorUsername(
-    //     userNameExist
-    //       ? "Este nombre de usuario ya se encuentra registrado con otra cuenta"
-    //       : null
-    //   );
-    // }
   };
 
   return (
@@ -92,7 +73,6 @@ export default function Signup() {
                 className="input-signup"
               ></Field>
               {errors.email && touched.email ? <div>{errors.email}</div> : null}
-
               <label htmlFor="username">Nombre de Usuario:</label>
               <Field
                 type="text"
@@ -133,8 +113,7 @@ export default function Signup() {
               <p>
                 ¿Ya posees una cuenta?, <Link to="/login">Inicia Sesión!</Link>
               </p>
-              {errorEmail && <div>{errorEmail}</div>}
-              {errorUsername && <div>{errorUsername}</div>}
+              {errorCredentials && <div>{errorCredentials}</div>}
               {error && <div>{error}</div>}
             </Form>
           )}

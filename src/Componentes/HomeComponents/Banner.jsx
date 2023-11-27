@@ -50,7 +50,7 @@ export default function Banner() {
           />
           <div className="banner-text">
             <h3>{latestNews.titulo}</h3>
-            <p>{latestNews.descripcion}</p>
+            <p>{latestNews.fecha_publicacion}</p>
           </div>
         </div>
       </div>

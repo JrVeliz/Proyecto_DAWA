@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import Header from "./Header";
 import "../styles/Account.css";
-import { inputsSignupValidation } from "./DashboardComponents/Validations";
+import { inputsSignupValidation } from "./DashboardComponents/InputsValidations.js";
 import { actualizarUsuario } from "../utils/db_functions";
 
 function Account({ currentUser, logout,setUser }) {
