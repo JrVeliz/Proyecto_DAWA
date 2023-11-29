@@ -17,25 +17,26 @@ export default function NewsUpdates() {
   const obtenerNews = async () => {
     try {
       const allNews = await selectNews();
-       // Ordenar las noticias por fecha de manera descendente
-       const sortedNews = allNews.data.sort(
-        (a, b) => new Date(b.fecha) - new Date(a.fecha)
-      );
       // Obtener solo las últimas 7 noticias
-      const latestNews = sortedNews.slice(0, 7);
+      const latestNews = allNews.data.slice(0, -1).slice(-6);
       setNews(latestNews);
     } catch (error) {
       console.error('Hubo un error al obtener las noticias:', error);
     }
   };
+
   useEffect(() => {
     obtenerNews();
   }, []);
 
-  function handleNews(idNew) {
-    const newSelected = news[idNew-1];
-    navigate("/NewComplete", { state: newSelected });
-    console.log("Desde NewsUpdates: ", idNew);
+  function handleNews(newID) {
+    const newSelected = news.find(dataNew => dataNew.id === newID);
+    if (newSelected) {
+      navigate("/NewComplete", { state: newSelected });
+      console.log("Desde LastNews: ", newID);
+    } else {
+      console.error("La new seleccionada no fue encontrada.");
+    }
   }
   return (
     <section className="container-lastest-news">
@@ -54,20 +55,20 @@ export default function NewsUpdates() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay,Navigation]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
         {news.map((noticia) => (
-            <SwiperSlide className="slider-news" onClick={()=>{handleNews(noticia.id)}}>
-              <div key={noticia.id} className="noticiaU">
-                <img src={noticia.urlImagen} alt="imagen noticia" />
-                <div className="new-text">
+          <SwiperSlide className="slider-news" onClick={() => { handleNews(noticia.id) }}>
+            <div key={noticia.id} className="noticiaU">
+              <img src={noticia.urlImagen} alt="imagen noticia" />
+              <div className="new-text">
                 <h4>{noticia.titulo}</h4>
                 <p>{noticia.descripcionCorta}</p>
-                </div>
               </div>
-            </SwiperSlide>
-          ))}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

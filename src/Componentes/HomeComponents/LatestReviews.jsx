@@ -16,22 +16,22 @@ export default function LatestReviews() {
 
   const obtenerReviews = async () => {
     const allReviews = await selectReviews();
-    setReviews(allReviews.data);
-    const sortedReviews = allReviews.data.sort(
-      (a, b) => new Date(b.fecha_resenia) - new Date(a.fecha_resenia)
-    );
-    // Obtener solo las últimas 7 reseñas
-    const latestReviews = sortedReviews.slice(0, 7);
+    // Obtener solo las últimas 7 reseñas sin ordenar
+    const latestReviews = allReviews.data.slice(-7);
     setReviews(latestReviews);
   };
   useEffect(() => {
     obtenerReviews();
   }, []);
 
-  function handleReviews(idReview) {
-    const reviewSelected = reviews[idReview - 1];
-    navigate("/ReviewComplete", { state: reviewSelected });
-    console.log("Desde LastReview: ", idReview);
+  function handleReviews(reviewId) {
+    const reviewSelected = reviews.find(review => review.id === reviewId);
+    if (reviewSelected) {
+      navigate("/ReviewComplete", { state: reviewSelected });
+      console.log("Desde LastReview: ", reviewId);
+    } else {
+      console.error("La reseña seleccionada no fue encontrada.");
+    }
   }
 
   const getColorClass = (puntuacion) => {
